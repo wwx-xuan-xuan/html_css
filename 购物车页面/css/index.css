@@ -1,0 +1,103 @@
+.shopping-head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+.shopping-head .shopping-head-left {
+  float: left;
+  margin-left: 10px;
+  line-height: 50px;
+  color: #c5c7c6;
+}
+.shopping-head .shopping-head-right {
+  float: right;
+  margin-right: 10px;
+  line-height: 50px;
+}
+.shopping-list {
+  width: 100%;
+  height: 800px;
+  background: #F7F7F7 center 50px url(../images/kong.png) no-repeat;
+}
+.shopping-settlement {
+  border-top: 1px solid #bbbbbb;
+  position: fixed;
+  bottom: 51px;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+}
+.shopping-settlement .shopping-settlement-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.shopping-settlement .shopping-settlement-left .settlement-left-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+}
+.shopping-settlement .shopping-settlement-left span {
+  position: absolute;
+  top: 17px;
+  left: 40px;
+}
+.shopping-settlement .shopping-settlement-left .settlement-left-price {
+  left: 80px;
+  color: #ec2c2c;
+}
+.shopping-settlement .shopping-settlement-right {
+  float: right;
+  width: 50%;
+  height: 50px;
+  background-color: #ffffff;
+}
+.shopping-settlement .shopping-settlement-right .settlement-right-btn {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #969191;
+  text-align: center;
+}
+.shopping-settlement .shopping-settlement-right .settlement-right-btn span {
+  line-height: 40px;
+  color: #ffffff;
+}
+.shopping-tapbar {
+  width: 100%;
+  height: 50px;
+  background-color: beige;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.shopping-tapbar .shopping-tapbar-item {
+  border-top: 1px solid #bbbbbb;
+  width: 25%;
+  flex: 1;
+  height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.shopping-tapbar .shopping-tapbar-item .fa {
+  color: #605c5c;
+  font-size: 27px;
+}
+.shopping-tapbar .shopping-tapbar-item div {
+  color: #b6aeae;
+  font-size: 10px;
+}
+.shopping-tapbar .shopping-tapbar-item .active {
+  color: #ec3030;
+}

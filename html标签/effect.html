@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head标签 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="../css属性/" hreflang="zh" media="all">
+</head>
+
+<body>
+    <!-- 文本标签 -->
+    <p>12&nbsp;&nbsp;&nbsp;&nbsp;1</p>
+    <br>
+    <p>12</p>
+
+    <hr>
+
+    <p>p标签</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <!-- 链接标签 -->
+    <a hreflang="zh" target="tata" href="/images/myw3schoolimage.jpg" download="w3logo">点击下载图片</a>
+
+    <br>
+
+
+    <a hreflang="zh" target="_blank" href="https://www.yuque.com/dashboard/my_books">点击x新窗口打开</a>
+
+
+    <!-- 多媒体标签 -->
+    <br>
+
+    <video class="" src="https://www.runoob.com/try/demo_source/movie.mp4" initial-time="0" autoplay="false"
+        loop="false" muted="false" direction="0" bindplay="" bindpause="" bindended="" bindtimeupdate="" bindwaiting=""
+        binderror="" controls="controls" loop="loop" muted="muted" poster="poster">
+
+    </video>
+
+    <br>
+    <br>
+    <br>
+
+
+    <audio src="https://www.runoob.com/try/demo_source/horse.ogg" autoplay="autoplay" loop="loop" muted="muted"></audio>
+
+    &nbsp;
+    <hr>
+    <br>
+
+    <img width="400px" usemap="#planetmap"
+        src="https://th.bing.com/th/id/Rb572cf0dcff93fe13b71af8ab43fd454?rik=g5YdMgIO9siDaA&riu=http%3a%2f%2fimg.ewebweb.com%2fuploads%2f20191006%2f20%2f1570365161-shmEFlWfHU.jpg&ehk=u5A16U5IZ7u6Wi3KtC7OBarR5lf1nOd8UfJP0USvLXg%3d&risl=&pid=ImgRaw"
+        alt="图片加载失败后显示的文字">
+    <map name="planetmap">
+        <area href="sun.htm" shape="rect" coords="0,0,110,260"></a>
+    </map>
+
+
+
+
+    <!-- 表格标签 -->
+    <table border="1">
+
+        <caption>biaoti</caption>
+        <tr align="center">
+            <th colspan="2" rowspan="">Month</th>
+            <th>Savings</th>
+            <th>Month</th>
+            <!-- <th>Month</th> -->
+        </tr>
+        <tr>
+            <td colspan="2">January</td>
+            <td>$100</td>
+            <!-- <td>$100</td> -->
+            <td>January</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$8 0</td>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+
+
+    <!-- form表单标签 -->
+
+    <form action="" method="post">
+
+        <input type="text" tabindex="0" required="required" placeholder="提示信息">
+
+        <hr>
+        <br>
+
+        <input disabled="disabled" type="text" tabindex="0" required="required" placeholder="已被警用">
+
+        <hr>
+        <br>
+
+        <input type="password" tabindex="0" required="required" placeholder="输入密码">
+
+        <hr>
+        <br>
+
+        <input type="checkbox" checked>123
+        <input type="checkbox" name="aihao[]" value="w">w
+        <input type="checkbox" name="aihao[]" value="x">x
+        <input type="checkbox" name="aihao[]" value="y">y
+
+        <hr>
+        <br>
+
+        <input type="submit" value="发送请求">
+
+        <hr>
+        <br>
+
+        <input type="text" autofocus="autofocus">
+
+        <hr>
+        <br>
+
+        <input type="text" readonly="" placeholder="只读">
+
+        <hr>
+        <br>
+
+
+        <!-- button -->
+        <button>这是一个按钮</button>
+
+
+
+        <hr>
+        <br>
+        <hr>
+        <br>
+
+        <!-- textarea -->
+        <textarea rows="10" cols="30">
+            我是一个文本框。
+        </textarea>
+
+
+        <textarea autofocus name="tex1" cols="30" rows="10">
+            当页面加载时，该文本区域自动获得焦点。
+            （被前面那个text框挡了kao）
+        </textarea>
+
+
+        <hr>
+        <br>
+
+
+        <textarea name="tex2" disabled id="" cols="30" rows="10">
+            禁用文本区域。
+        </textarea>
+
+
+        <hr>
+        <br>
+
+        <textarea maxlength="10" name="tex3" id="" cols="30" rows="10">
+            该文本区域允许的最大字符数为10
+        </textarea>
+
+        <hr>
+        <br>
+
+        <textarea name="tex4" placeholder="预期值：王文轩是大帅哥" id="" cols="30" rows="10"></textarea>
+
+
+        <hr>
+        <br>
+
+
+        <textarea name="tex5" id="" readonly cols="30" rows="10">该文本区域只读</textarea>
+
+        <hr>
+        <br>
+
+
+
+        <textarea name="tex6" id="" cols="30" rows="10" required="required">该文本区域是必需的/必填的</textarea>
+
+
+        <br>
+
+        <!-- select -->
+
+        <select name="11" multiple>
+            <option selected value="1">123</option>
+            <option value="2">312</option>
+            <option value="3">312</option>
+            <option value="4">132</option>
+        </select>
+
+
+        <br>
+
+
+        <!-- label -->
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="female" value="female"><br><br>
+        <input type="submit" value="提交">
+
+
+    </form>
+
+
+
+
+
+    <!-- 列表标签 -->
+    <br>
+    <!-- 无序列表 -->
+    <br>
+    <hr>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <hr>
+    <br>
+
+    <ul type="square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+    <hr>
+    <br>
+
+    <ul type="cicle ">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <hr>
+    <br>
+
+    <!-- 有序列表 -->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <hr>
+    <br>
+
+
+    <ol reversed>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <hr>
+    <br>
+
+
+
+    <!-- 语义化标签 -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <br>
+
+
+    <!-- div -->
+
+    <div>这是一个div</div>
+    <div>这是二个div</div>
+
+
+    <hr>
+    <br>
+
+
+    <span>这是第一个span</span>
+    <span>这是第二个span</span>
+
+
+    <hr>
+    <br>
+
+
+
+
+
+
+</body>
+
+</html>

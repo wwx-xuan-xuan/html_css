@@ -1,0 +1,195 @@
+//标签选择器
+div{
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(196, 40, 40);
+}
+
+// class选择器
+.box1{
+
+    p{
+        line-height: 200px; //行高与父元素高相等，元素将上下居中
+        text-align: center;
+
+    }
+}
+
+// id选择器
+#box2{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //这三行也可以垂直水平居中
+
+
+    //多元素选择器
+    a,span{
+        flex: 1;
+    }
+
+    //结构性伪类: 匹配其父元素的第n个子元素，第一个编号为1
+    a:nth-child(1){
+        text-decoration: none;
+    }
+
+
+    //但是仅匹配使用同种标签的元素
+    span:nth-of-type(1){
+        text-decoration: overline;
+    }
+
+    //结构性伪类: 匹配其父元素的倒数第n个子元素，第一个编号为1
+    a:nth-last-child(1){
+
+        text-decoration: line-through;
+    }
+}
+
+
+//属性class的值以"back"开头的元素,公共样式
+div[class^="back"]{
+    font-size: 20px;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    .box3{
+        flex: 1;
+        width: 160px;
+        height: 160px;
+        padding:25px;
+        border:10px dashed #dcb0dd;
+    }
+    
+    .box4{
+        flex: 1;
+        width: 160px;
+        height: 160px;
+        padding:25px;
+        border:10px dashed #dcb0dd;
+    }
+
+    .box5{
+        flex: 1;
+        width: 160px;
+        height: 160px;
+        padding:25px;
+        border:10px dashed #dcb0dd;
+    }
+}
+
+.back-clip{
+    .box3{
+        background-color:rgb(118, 189, 172);
+        background-clip:content-box;
+    }
+    
+    .box4{
+        background-color:rgb(118, 189, 172);
+        background-clip:border-box;
+    }
+
+    .box5{
+        background-color:rgb(118, 189, 172);
+        background-clip:padding-box;
+    }
+}
+
+
+.back-position{
+    .box3{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+
+    .box4{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+
+        background-position: 20% 50%;
+
+
+    }
+
+    .box5{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+        background-position: 300px 150px;
+
+    }
+}
+
+
+.back-size{
+    .box3{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+    }
+
+    .box4{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+    .box5{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: cover;
+        background-repeat:no-repeat;
+    }
+}
+
+
+.back-repeat{
+    .box3{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+    }
+
+    .box4{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:repeat-x;
+    }
+
+    .box5{
+        background-image: url(./R7f786f37ca0f2307e0b952cb61c3ad48.jpg);
+        background-size: 100px;
+        background-repeat:repeat;
+    }
+}
+
+
+.font{
+    width: 100%;
+    position: relative;
+    .style{
+        float: left;
+    }
+    .normal{
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .italic{
+        font-style: italic;
+        font-size: 30px;
+        
+    }
+
+    .oblique{
+        font-style: oblique;
+    }
+
+
+}

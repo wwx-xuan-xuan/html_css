@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+
+            var btn_container = document.getElementsByClassName("btn_container")[0];
+            var box2 = document.getElementsByClassName("box2")[0];
+
+            // 创建button节点
+            var btn = document.createElement("button");
+            var btn2 = document.createElement("button");
+            var p = document.createElement("p");
+
+            //添加
+            btn_container.appendChild(btn);
+
+            var text = document.createTextNode("文本");
+
+            //在div里面加
+            btn_container.appendChild(text)
+
+            //在button里面加
+            btn.appendChild(text)
+
+            //shan
+            // btn_container.removeChild(btn)
+
+            //替换
+            btn_container.replaceChild(p, btn)
+
+
+
+            //插入
+            btn_container.insertBefore(btn, p)
+
+
+            //复制深
+            var btnAll = btn_container.cloneNode(true);
+            box2.appendChild(btnAll)
+
+
+            //获取文本节点
+            var text2 = btn.childNodes.item(0);
+            console.log(text2)
+
+            //文本节点追加新值
+            text2.appendData("加到后面的文本");
+
+            //删除指定位置文本
+            text2.deleteData(0,2);   
+
+            //插入指点位置文本
+            text2.insertData(1,"insert")
+
+            //添加属性
+            box2.setAttribute("w","we")
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="btn_container">
+
+    </div>
+    <button>annn</button>
+
+    <div class="box2"></div>
+
+</body>
+
+</html>

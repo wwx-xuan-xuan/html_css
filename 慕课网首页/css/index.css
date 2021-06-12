@@ -1,0 +1,104 @@
+#top {
+  width: 100%;
+  position: fixed;
+  height: 72px;
+}
+.Top_navigation {
+  background-color: #ffffff;
+  width: 1366px;
+  height: 72px;
+  margin: 0 auto;
+  display: flex;
+}
+.Top_navigation .navigation_image {
+  width: 126px;
+  flex: 1;
+  display: flex;
+}
+.Top_navigation .navigation_image img {
+  width: 126px;
+  margin: 0 auto;
+}
+.Top_navigation .left_nav {
+  flex: 3;
+  background-color: #ffffff;
+}
+.Top_navigation .left_nav li {
+  flex: 1;
+}
+.Top_navigation .left_nav li a {
+  text-decoration: none;
+  display: flex;
+  height: 72px;
+  width: 80.6px;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  color: #545C63;
+  font-size: 16px;
+  position: relative;
+}
+.Top_navigation .left_nav li a img {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  width: 14px;
+}
+.Top_navigation .search_box {
+  flex: 2;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+}
+.Top_navigation .search_box .search_item input {
+  margin: 15px 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #9199A1;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  height: 20px;
+  width: 240px;
+  background-color: #F3F5F6;
+}
+.Top_navigation .search_box .search_item .search_icon {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 36px;
+  border-radius: 3px;
+  height: 36px;
+  background-color: #F3F5F6;
+  font-size: 20px;
+}
+.Top_navigation .search_box .search_item .search_icon a {
+  color: #9199A1;
+}
+.Top_navigation .right_nav {
+  flex: 2;
+  background-color: #ffffff;
+}
+.Top_navigation .right_nav .right_nav_item {
+  position: relative;
+}
+.Top_navigation .right_nav .right_nav_item ul {
+  margin: 0 auto;
+  display: flex;
+}
+.Top_navigation .right_nav .right_nav_item ul li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.Top_navigation .right_nav .right_nav_item ul a {
+  line-height: 70px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #9199A1;
+  font-size: 16px;
+}

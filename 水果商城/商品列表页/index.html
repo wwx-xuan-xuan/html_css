@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水果商城-商品列表</title>
+
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href="./fa/font-face/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- 引入当前页面的样式表 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- <script src="./js/index.js"></script> -->
+
+    <script src="./jquery/jquery-3.5.1.js"></script>
+    <script src="./js/indexJq.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- title -->
+    <div class="title">
+        <div class="title_Left"><i class="fa fa-angle-left"></i></div>
+        <div class="title_Middle">水果商城</div>
+        <div class="title_Right">
+            <div class="title_Right_Option"><i class="	fa fa-reorder"></i></div>
+            <span>|</span>
+            <div class="title_Right_Close"><i class="	fa fa-times-circle"></i></div>
+        </div>
+    </div>
+
+    <!-- 头部标签 -->
+    <div class="label">
+        <div class="label_Top">
+            <div class="label_Top_List active"><span>新鲜水果</span></div>
+            <div class="label_Top_List"><span>海南特产</span></div>
+        </div>
+
+        <div class="label_Sort">
+            <div class="label_Sort_List">推荐排序<i class="fa fa-caret-down"></i></div>
+            <span>|</span>
+            <div class="label_Sort_List">价格<i class="fa fa-caret-down"></i></div>
+        </div>
+
+        <!-- 下拉框 -->
+        <div class="label_drop_down">
+            <div class="drop_down_left">
+                <div class="words">
+                    <div>
+                        <ul>
+                            <li>综合排序</li>
+                            <li>销量排序</li>
+                            <li>好评优先</li>
+                            <li>低价优先</li>
+                            <li>高价优先</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="drop_down_right">
+                <div class="down_right_priseRange">价格范围</div>
+                <div class="down_right_prise">￥200-￥500</div>
+
+                <div class="down_right_minimumPrice">
+                    <div class="minimumPrice_name">最低价</div>
+                    <div class="minimumPrice_scopeBar">
+                        <div class="minimumPrice_scopeBar_left"></div>
+                        <div class="minimumPrice_scopeBar_circle"></div>
+                        <div class="minimumPrice_scopeBar_right"></div>
+                    </div>
+                </div>
+
+                <div class="down_right_highestPrice">
+                    <div class="highestPrice_name">最高价</div>
+                    <div class="highestPrice_scopeBar">
+                        <div class="highestPrice_scopeBar_left"></div>
+                        <div class="highestPrice_scopeBar_circle"></div>
+                        <div class="highestPrice_scopeBar_right"></div>
+                    </div>
+                </div>
+
+
+                <div class="down_right_btn"><span>确定</span></div>
+
+                <div class="down"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="product_List">
+
+        <!-- 新鲜水果 -->
+        <div class="product_List_left">
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>59</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic3.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">大果香甜水果王</div>
+                    <div class="item_details_unitPrice">海南椰青/6个</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">5.0分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>35</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic5.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲 大果香甜</div>
+                    <div class="item_details_unitPrice">三亚莲雾/2500g</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>42</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>59</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>59</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 海南特产 -->
+        <div class="product_List_right">
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic3.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>39</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">水果王</div>
+                    <div class="item_details_unitPrice">海南椰青/6个</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">5.0分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>35</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">大果香甜</div>
+                    <div class="item_details_unitPrice">三亚莲雾/2500g</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>35</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>59</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product_List_item">
+                <div class="product_List_item_img"><img src="./assets/orderFruitpic1.png" alt=""></div>
+                <div class="product_List_item_details">
+                    <div class="item_details_name">年货海南现摘榴莲</div>
+                    <div class="item_details_unitPrice">金枕/8斤</div>
+                    <div class="item_details_discount">惠</div>
+
+                    <div class="item_details_price">
+                        <div class="item_details_price_left">4.9分</div>
+                        <div class="item_details_price_middle">1256人购买</div>
+                        <div class="item_details_price_right">￥<span>59</span>起</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

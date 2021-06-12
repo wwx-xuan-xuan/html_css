@@ -1,0 +1,132 @@
+#top{
+    width: 100%;
+    position: fixed;
+    height: 72px;
+    // border-bottom: 0px solid black;
+    // box-shadow:0;
+
+
+}
+
+.Top_navigation{
+    background-color: rgb(255, 255, 255);
+    width: 1366px;
+    height: 72px;
+    margin: 0 auto;
+    display: flex;
+
+    .navigation_image{
+        width: 126px;
+        flex: 1;
+        display: flex;
+
+        img{
+
+            width: 126px;
+            margin: 0 auto;
+        }
+    }
+
+    .left_nav{
+        flex: 3;
+        background-color: rgb(255, 255, 255);
+
+        li{
+            flex: 1;
+            a{
+                text-decoration: none;
+                display: flex;
+                height: 72px;
+                width: 80.6px;
+                justify-content: center;
+                align-items: center;
+                float: left;
+                color: #545C63;
+                font-size: 16px;
+                position: relative;
+
+                img{
+                    display: inline-block;
+                    position: absolute;
+                    top: 15px;
+                    right: 8px;
+                    width: 14px;
+                }
+            }
+        }
+    }
+
+    .search_box{
+        flex: 2;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        display:flex;
+
+        .search_item{
+
+        
+
+
+            input{
+                margin: 15px 10px;
+                padding: 8px 12px;
+                font-size: 14px;
+                color: #9199A1;
+                border-radius: 3px;
+                border: none;
+                outline: none;
+                height: 20px;
+                width: 240px;
+                background-color: #F3F5F6;
+            }
+
+            .search_icon{
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                display: inline-block;
+                background-color: rgb(255, 255, 255);
+                width: 36px;
+                border-radius: 3px;
+                height: 36px;
+                background-color: #F3F5F6;
+                font-size: 20px;
+                a{
+                    color: #9199A1;
+                }
+            }
+
+        }
+    }
+
+    .right_nav{
+        flex: 2;
+        background-color: rgb(255, 255, 255);
+
+        .right_nav_item{
+            position: relative;
+
+            ul{
+                margin: 0 auto;
+                display: flex;
+
+                li{
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+                a{
+                    line-height: 70px;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #9199A1;
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+
+}

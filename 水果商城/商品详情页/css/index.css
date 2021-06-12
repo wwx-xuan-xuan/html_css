@@ -1,0 +1,488 @@
+body {
+  background-color: #F4F4F4;
+}
+.title {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .title_Left {
+  flex: 2;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383838;
+}
+.title .title_Middle {
+  flex: 6;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383838;
+}
+.title .title_Right {
+  flex: 2;
+  display: flex;
+  font-size: 1.125rem;
+  justify-content: center;
+  align-items: center;
+  border: 0.03rem solid #ccc;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  color: #383838;
+}
+.title .title_Right .title_Right_Option {
+  margin-right: 0.625rem;
+}
+.title .title_Right span {
+  color: #ccc;
+}
+.title .title_Right .title_Right_Close {
+  margin-left: 0.625rem;
+}
+.big_img img {
+  margin-top: 4rem;
+  width: 100%;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  height: 11.9rem;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 15px solid #f4f4f4;
+}
+.information .information_name {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 800;
+  line-height: 2rem;
+}
+.information .information_price {
+  flex: 1;
+  display: flex;
+  line-height: 2rem;
+}
+.information .information_price .information_price_left {
+  flex: 1 ;
+  color: #FE8B00;
+}
+.information .information_price .information_price_left span {
+  font-size: 1.5rem;
+  color: #FE8B00;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.information .information_price .information_price_right {
+  flex: 1 ;
+  display: flex;
+  justify-content: flex-end;
+}
+.information .information_price .information_price_right .span1 {
+  font-size: 0.75rem;
+  margin-right: 10px;
+  color: #666;
+}
+.information .information_price .information_price_right .span2 {
+  color: #1AC4DD;
+}
+.information .information_discount {
+  flex: 1;
+  line-height: 2rem;
+  width: 5rem;
+  border-radius: 0.75rem;
+  background-color: #FFEBD3;
+  color: #AE6C1D;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.information .information_hr {
+  flex: 1;
+  line-height: 2rem;
+}
+.information .information_hr hr {
+  color: #E6E6E6;
+}
+.information .information_data {
+  position: relative;
+  flex: 2;
+  line-height: 4rem;
+}
+.information .information_data .information_data_top {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 800;
+}
+.information .information_data .information_data_top .span1 {
+  color: #FE8B00;
+}
+.information .information_data .information_data_bottom {
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  color: #333;
+}
+.information .information_data .span2 {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  height: 1.25rem;
+  line-height: 1rem;
+  background-color: #2AB3C4;
+  color: #fff;
+  width: 1.25rem;
+  text-align: center;
+}
+.middle_title {
+  display: flex;
+  height: 2.75rem;
+  text-align: center;
+  border-bottom: 0.03rem solid #E6E6E6;
+  color: #333;
+  background-color: #fff;
+}
+.middle_title .middle_title_left {
+  flex: 1;
+}
+.middle_title .middle_title_left span {
+  display: inline-block;
+  height: 2.6rem;
+  line-height: 2.7rem;
+  font-weight: 550;
+}
+.middle_title .middle_title_mid {
+  flex: 1;
+  line-height: 2.75rem;
+}
+.middle_title .middle_title_mid span {
+  display: inline-block;
+  height: 2.6rem;
+  line-height: 2.7rem;
+  font-weight: 550;
+}
+.middle_title .middle_title_right {
+  flex: 1;
+  line-height: 2.75rem;
+}
+.middle_title .middle_title_right span {
+  display: inline-block;
+  height: 2.6rem;
+  line-height: 2.7rem;
+  font-weight: 550;
+}
+.active {
+  display: inline-block;
+  height: 2.6rem;
+  line-height: 2.7rem;
+  color: #1AC4DD;
+  font-weight: 550;
+  border-bottom: 0.19rem solid #1AC4DD;
+}
+.product_description {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 30px;
+  background-color: #fff;
+  border-bottom: 15px solid #f4f4f4;
+}
+.product_description .product_description_title {
+  flex: 1;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-weight: 550;
+}
+.product_description .product_description_content {
+  flex: 2;
+  height: 4.5rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #333333;
+}
+.purchase_information {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 30px;
+  background-color: #fff;
+  border-bottom: 15px solid #f4f4f4;
+}
+.purchase_information .purchase_information_title {
+  flex: 1;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-weight: 550;
+}
+.purchase_information .purchase_information_content {
+  flex: 2;
+  height: 4.5rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #333333;
+}
+.buyer_evaluation {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 30px;
+  background-color: #fff;
+  border-bottom: 15px solid #f4f4f4;
+  margin-bottom: 5rem;
+}
+.buyer_evaluation .buyer_evaluation_title {
+  flex: 1;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  font-weight: 550;
+}
+.buyer_evaluation .buyer_evaluation_label {
+  flex: 2;
+}
+.buyer_evaluation .buyer_evaluation_label .label_item {
+  float: left;
+  background-color: #DAF5F8;
+  line-height: 1.5rem;
+  margin: 0 0 0.5rem 0.5rem;
+  padding: 5px;
+  border-radius: 0.25rem;
+  color: #1A8696;
+  font-weight: 550;
+  font-size: 0.8rem;
+}
+.buyer_evaluation .buyer_evaluation_user {
+  display: flex;
+}
+.buyer_evaluation .buyer_evaluation_user .user_portrait {
+  flex: 1;
+}
+.buyer_evaluation .buyer_evaluation_user .user_portrait img {
+  width: 2.25rem;
+  border: 2px solid #b1a8a8;
+  border-radius: 1.625rem;
+}
+.buyer_evaluation .buyer_evaluation_user .user {
+  flex: 6;
+}
+.buyer_evaluation .buyer_evaluation_user .user .user_name {
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+}
+.buyer_evaluation .buyer_evaluation_user .user .user_time {
+  font-size: 0.8rem;
+  color: #999;
+}
+.buyer_evaluation .buyer_evaluation_content {
+  height: 4.5rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #333333;
+}
+.buyer_evaluation .buyer_evaluation_all {
+  display: flex;
+}
+.buyer_evaluation .buyer_evaluation_all .unfold {
+  flex: 1;
+  color: #1AC4DD;
+}
+.buyer_evaluation .buyer_evaluation_all .star {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  color: #1AC4DD;
+}
+.buyer_evaluation .buyer_evaluation_all .star i {
+  margin-left: 5px;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 0 10px 0px;
+}
+.bottom .bottom_customer_service {
+  flex: 1;
+  text-align: center;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom .bottom_customer_service img {
+  width: 1.3rem;
+}
+.bottom .bottom_shopping {
+  flex: 1;
+  text-align: center;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom .bottom_shopping img {
+  width: 1.3rem;
+}
+.bottom .bottom_collection {
+  flex: 1;
+  text-align: center;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bottom .bottom_collection img {
+  width: 1.3rem;
+}
+.bottom .bottom_addShopping {
+  flex: 3;
+  border: 2px solid #999;
+  border-radius: 1.5rem;
+  width: 6rem;
+  margin-left: 10px;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 550;
+}
+.bottom .bottom_buy {
+  flex: 3;
+  border: 2px solid #FE8B00;
+  background-color: #FE8B00;
+  border-radius: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 550;
+}
+.buy_eject {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 22.44rem;
+  background-color: #fff;
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 -205px 0px rgba(0, 0, 0, 0.5);
+}
+.buy_eject .buy_eject_off {
+  flex: 1;
+}
+.buy_eject .buy_eject_off img {
+  width: 1.2rem;
+  float: right;
+}
+.buy_eject .buy_eject_commodity {
+  flex: 4;
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 15px;
+}
+.buy_eject .buy_eject_commodity img {
+  height: 6.25rem;
+}
+.buy_eject .buy_eject_commodity .buy_eject_commodity_item {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.buy_eject .buy_eject_commodity .buy_eject_commodity_item .buy_eject_commodity_price {
+  flex: 2;
+  line-height: 2rem;
+  color: #FE8B00;
+  font-size: 1.3rem;
+}
+.buy_eject .buy_eject_commodity .buy_eject_commodity_item .buy_eject_commodity_name {
+  flex: 1;
+  color: #666;
+  font-size: 0.6rem;
+}
+.buy_eject .buy_eject_commodity .buy_eject_commodity_item .buy_eject_commodity_type {
+  flex: 3;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 550;
+}
+.buy_eject .buy_eject_type {
+  flex: 3;
+  margin-top: 15px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.buy_eject .buy_eject_type .buy_eject_type_name {
+  font-weight: 550;
+}
+.buy_eject .buy_eject_type .buy_eject_type_content {
+  display: flex;
+  margin-top: 0.6rem;
+}
+.buy_eject .buy_eject_type .buy_eject_type_content .type1 {
+  flex: 1;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 1rem;
+}
+.buy_eject .buy_eject_type .buy_eject_type_content .type2 {
+  flex: 1;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 1rem;
+}
+.buy_eject .buy_eject_num {
+  flex: 2;
+  display: flex;
+}
+.buy_eject .buy_eject_num .buy_eject_num_title {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buy_eject .buy_eject_num .num {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buy_eject .buy_eject_num .num img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.buy_eject .buy_eject_num .num span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.buy_eject .buy_eject_yes {
+  flex: 2;
+  background-color: #1AC4DD;
+  border-radius: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  font-weight: 550;
+}
+.active_type {
+  background-color: #E5F4F5;
+  border-radius: 1rem;
+  color: #19a6bb;
+}
