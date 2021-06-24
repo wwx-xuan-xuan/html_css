@@ -16,6 +16,7 @@
   height: 25px;
   line-height: 25px;
   padding: 0 10px 0 10px;
+  white-space: nowrap;
 }
 .bullet_chat .meng_left {
   width: 200px;

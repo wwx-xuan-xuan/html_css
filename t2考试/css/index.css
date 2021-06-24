@@ -1,0 +1,283 @@
+body {
+  background-color: #F4F4F4;
+}
+.harvest_address {
+  height: 5.94rem;
+  width: 90%;
+  background-color: #fff;
+  margin: 0.5rem auto;
+  border-radius: 0.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.harvest_address .harvest_address_user {
+  font-weight: 550;
+  padding: 1rem 1rem 0 1rem;
+}
+.harvest_address .harvest_address_user .name {
+  margin-right: 1rem;
+}
+.harvest_address .harvest_address_specific {
+  padding: 0.5rem 1rem 1rem 1rem;
+  font-size: 0.8rem;
+  display: flex;
+}
+.harvest_address .harvest_address_specific .city {
+  flex: 6;
+}
+.harvest_address .harvest_address_specific .img {
+  flex: 1;
+}
+.harvest_address .harvest_address_specific .img img {
+  width: 0.375rem;
+  float: right;
+}
+.fruit_merchants_one {
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.fruit_merchants_one .fruit_merchants_one_title {
+  line-height: 1.4rem;
+  padding: 1rem 0 0 1rem;
+  font-weight: 550;
+}
+.fruit_merchants_one .fruit_merchants_one_title img {
+  height: 1rem;
+}
+.fruit_merchants_one .product {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.fruit_merchants_one .product .product_img {
+  margin-left: 1rem;
+}
+.fruit_merchants_one .product .product_img img {
+  width: 4.5rem;
+}
+.fruit_merchants_one .product .product_details {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 60%;
+}
+.fruit_merchants_one .product .product_details .name {
+  height: 2.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 550;
+}
+.fruit_merchants_one .product .product_details .weight {
+  font-size: 0.8rem;
+  color: #999;
+}
+.fruit_merchants_one .product .price {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 550;
+  right: 10px;
+}
+.fruit_merchants_one .product .price .num {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #333;
+  float: right;
+}
+.fruit_merchants_one .delivery_mode {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 90%;
+  margin: 0 1rem 0 1rem;
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  font-size: 0.82rem;
+}
+.fruit_merchants_one .delivery_mode .left {
+  color: #333;
+}
+.fruit_merchants_one .delivery_mode .right {
+  color: #666;
+}
+.fruit_merchants_one .delivery_mode .right img {
+  width: 0.35rem;
+}
+.fruit_merchants_one .discount {
+  border-top: 0px solid #DBDBDB;
+}
+.fruit_merchants_one .discount .right {
+  color: #FE8B00;
+}
+.fruit_merchants_one .total {
+  border-top: 0px solid #DBDBDB;
+  border-bottom: 0px solid #DBDBDB;
+}
+.fruit_merchants_one .total .right span:nth-child(2) {
+  font-size: 1.3rem;
+  color: #151515;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 0 10px 0px;
+  box-shadow: 0 0.065rem 0.1rem 0.03rem rgba(0, 0, 0, 0.5);
+}
+.bottom .bottom_num {
+  line-height: 3rem;
+  margin-left: 2rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+.bottom .bottom_money {
+  width: 50%;
+  margin-top: 1rem;
+  text-align: right;
+}
+.bottom .bottom_money .bottom_money_top {
+  font-size: 0.875rem;
+}
+.bottom .bottom_money .bottom_money_top span {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #FE8B00;
+}
+.bottom .bottom_money .bottom_money_bottom {
+  font-size: 0.8rem;
+  color: #FE8B00;
+}
+.bottom .bottom_buy {
+  flex: 3;
+  border: 2px solid #FE8B00;
+  background-color: #FE8B00;
+  border-radius: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+.bottom .bottom_buy span {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+.platform {
+  height: 9rem;
+}
+.platform .left {
+  color: #333;
+}
+.platform .center {
+  width: 60%;
+}
+.platform .center span {
+  color: #FE8B00;
+}
+.platform .right {
+  color: #666;
+}
+.platform .right img {
+  width: 0.35rem;
+}
+.remarks {
+  margin-bottom: 5rem;
+  height: 2rem;
+  background-color: #F4F4F4;
+  color: #999999;
+  font-size: 0.75rem;
+  line-height: 2rem;
+}
+.remarks span {
+  display: inline-block;
+  width: 0.19rem;
+  height: 0.19rem;
+  background-color: #999999;
+  border-radius: 0.1rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+.meng {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.payment {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20rem;
+  background-color: #ffffff;
+  border-radius: 15px 15px 0 0;
+  display: none;
+}
+.payment .payment_title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+.payment .payment_title img {
+  width: 1.5rem;
+  position: absolute;
+  right: 1rem;
+}
+.payment .payment_money {
+  margin: 1.5rem 0rem 1.5rem 0;
+  text-align: center;
+  line-height: 3rem;
+}
+.payment .payment_money span:nth-child(1) {
+  color: #333;
+  font-size: 1.1rem;
+}
+.payment .payment_money span:nth-child(2) {
+  color: #151515;
+  font-size: 1.875rem;
+}
+.payment .payment_wx,
+.payment .payment_zfb {
+  height: 3rem;
+  line-height: 3rem;
+}
+.payment .payment_wx img:nth-child(1),
+.payment .payment_zfb img:nth-child(1) {
+  width: 1.25rem;
+  margin: 0rem 1.5rem 0 1.5rem;
+}
+.payment .payment_wx img:nth-child(2),
+.payment .payment_zfb img:nth-child(2) {
+  width: 1.5rem;
+}
+.payment .payment_wx span,
+.payment .payment_zfb span {
+  display: inline-block;
+  width: 65%;
+  border-bottom: 1px solid #DDDDDD;
+  margin-left: 0.5rem;
+}
+.payment .pay {
+  height: 2.6rem;
+  width: 18rem;
+  background-color: #1AC4DD;
+  margin: 1rem auto;
+  text-align: center;
+  line-height: 2.6rem;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 1.35rem;
+}

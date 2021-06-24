@@ -1,3 +1,6 @@
+
+
+
 window.onload = function () {
 
    
@@ -9,6 +12,7 @@ window.onload = function () {
     var box_img = document.querySelectorAll("div.box > img")[0]
 
     box_img.onmousemove = function(event){
+        console.log(box1)
         var x = event.pageX + 10;
         var y = event.pageY -10;
 

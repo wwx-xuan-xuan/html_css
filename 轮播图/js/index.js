@@ -1,3 +1,9 @@
+
+
+
+
+
+
 window.onload = function () {
 
     var imgList = document.getElementsByTagName("li");
@@ -88,9 +94,9 @@ window.onload = function () {
                 imgList[j].style.opacity = 0;
 
                 //这里要等待过渡的1s，然后才消失
-                setTimeout(function () {
-                    imgList[j].style.display = "none"
-                }, 1000);
+                // setTimeout(function () {
+                //     imgList[j].style.display = "none"
+                // }, 1000);
 
                 //清除一次
                 clearInterval(qiehuan)

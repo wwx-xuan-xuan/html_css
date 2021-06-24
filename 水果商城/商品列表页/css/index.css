@@ -1,55 +1,9 @@
 body {
   background-color: #F4F4F4;
 }
-.title {
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title .title_Left {
-  flex: 2;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #383838;
-}
-.title .title_Middle {
-  flex: 6;
-  font-size: 1.125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #383838;
-}
-.title .title_Right {
-  flex: 2;
-  display: flex;
-  font-size: 1.125rem;
-  justify-content: center;
-  align-items: center;
-  border: 0.03rem solid #ccc;
-  height: 1.875rem;
-  border-radius: 0.9375rem;
-  color: #383838;
-}
-.title .title_Right .title_Right_Option {
-  margin-right: 0.625rem;
-}
-.title .title_Right span {
-  color: #ccc;
-}
-.title .title_Right .title_Right_Close {
-  margin-left: 0.625rem;
-}
 .label {
   position: fixed;
-  top: 4rem;
+  top: 0rem;
   background-color: #fff;
   width: 100%;
   height: 5.25rem;
@@ -107,7 +61,6 @@ body {
   line-height: 2.8rem;
 }
 .label .label_drop_down .drop_down_right {
-  height: 14.5rem;
   background-color: #ffffff;
   flex-direction: column;
   justify-content: center;
@@ -116,8 +69,9 @@ body {
   display: none;
 }
 .label .label_drop_down .drop_down_right .down {
+  position: absolute;
   width: 100%;
-  padding: 0;
+  left: 0;
   background-color: rgba(51, 51, 51, 0.5);
   height: 600px;
 }
@@ -138,6 +92,7 @@ body {
 }
 .label .label_drop_down .drop_down_right .down_right_minimumPrice .minimumPrice_name {
   color: #666;
+  font-size: 0.8rem;
 }
 .label .label_drop_down .drop_down_right .down_right_minimumPrice .minimumPrice_scopeBar {
   display: flex;
@@ -164,6 +119,7 @@ body {
   border-radius: 0.7rem;
   border: 0.03rem solid #1AC4DD;
   box-shadow: 0 0 0.07rem 0.07rem #C0C0C0;
+  z-index: 1;
 }
 .label .label_drop_down .drop_down_right .down_right_minimumPrice .minimumPrice_scopeBar .minimumPrice_scopeBar_right {
   position: absolute;
@@ -180,6 +136,7 @@ body {
 }
 .label .label_drop_down .drop_down_right .down_right_highestPrice .highestPrice_name {
   color: #666;
+  font-size: 0.8rem;
 }
 .label .label_drop_down .drop_down_right .down_right_highestPrice .highestPrice_scopeBar {
   display: flex;
@@ -206,6 +163,7 @@ body {
   border-radius: 0.7rem;
   border: 0.03rem solid #1AC4DD;
   box-shadow: 0 0 0.07rem 0.07rem #C0C0C0;
+  z-index: 1;
 }
 .label .label_drop_down .drop_down_right .down_right_highestPrice .highestPrice_scopeBar .highestPrice_scopeBar_right {
   width: 11.4rem;
@@ -238,7 +196,7 @@ body {
   border-bottom: 0.19rem solid #1AC4DD;
 }
 .product_List {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 .product_List .product_List_left {
   display: block;
@@ -306,4 +264,9 @@ body {
 }
 .product_List .product_List_item .product_List_item_details .item_details_price .item_details_price_right span {
   font-size: 1.25rem;
+}
+.meng {
+  width: 100%;
+  height: 50rem;
+  background-color: rgba(51, 51, 51, 0.5);
 }
