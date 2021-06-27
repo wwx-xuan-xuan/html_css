@@ -1,0 +1,437 @@
+body{
+    background-color: #F4F4F4;
+} 
+
+
+// .title{
+//     position: fixed;
+//     top: 0;
+//     background-color: #fff;
+//     width: 100%;
+//     height: 4rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .title_Left{
+//         flex: 2;
+//         font-size: 2rem;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         color: #383838;
+
+//     }
+
+//     .title_Middle{
+//         flex: 6;
+//         font-size: 1.125rem;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         color: #383838;
+//     }
+
+//     .title_Right{
+
+//         flex: 2;
+//         display: flex;
+//         font-size: 1.125rem;
+//         justify-content: center;
+//         align-items: center;
+//         border: 0.03rem solid #ccc;
+//         height: 1.875rem;
+//         border-radius: 0.9375rem;
+//         color: #383838;
+
+//         .title_Right_Option{
+//             margin-right: 0.625rem;
+//         }
+//         span{
+//             color: #ccc;
+//         }
+
+//         .title_Right_Close{
+//             margin-left: 0.625rem;
+//         }
+
+//     }
+
+
+// }
+
+
+
+
+.label{
+    position: fixed;
+    top: 0rem;
+
+    background-color: #fff;
+
+    width: 100%;
+    height: 5.25rem;
+
+    .label_Top{
+        height: 2.75rem;
+        display: flex;
+        border-bottom: 1px solid #939496;
+
+
+        .label_Top_List{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #939496;
+
+
+
+            span{
+                font-size: 1rem;
+                font-weight: 600;
+                height: 100%;
+                line-height: 2.75rem;
+            }
+        }
+
+
+    }
+
+    .label_Sort{
+        height: 2.5rem;
+        display: flex;
+        .label_Sort_List{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #323233;
+
+            i{
+                color: #ccc;
+
+            }
+        }
+
+
+
+        span{
+            line-height: 2.5rem;
+            color: #939496;
+
+        }
+    }
+
+
+    .label_drop_down{
+        .drop_down_left{
+            display: none;
+
+            text-align: center;
+            color: #333;
+            font-size: 0.875rem;
+            transition: opacity 0.5s;
+            opacity: 0;
+            
+            .words{
+                background-color: rgba(51, 51, 51, 0.5);
+                height: 600px;
+                div{
+
+                    ul{
+                        background-color: #fff;
+
+                        line-height: 2.8rem;
+
+                    }
+                }
+            }
+        }
+
+
+
+
+        .drop_down_right{
+
+                // height: 14.5rem;
+                    
+                background-color: rgb(255, 255, 255);
+                // display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+                transition: opacity 0.5s;
+                display: none;
+                // box-shadow: 0px 250px 0 0 rgba(51, 51, 51, 0.5);
+                .down{
+                    position: absolute;
+                    width: 100%;
+                    // padding: -20px;
+                    left: 0;
+                    background-color: rgba(51, 51, 51, 0.5);
+                    height: 600px;
+                }
+
+
+
+                .down_right_priseRange{
+                    flex: 1;
+                    line-height: 2.45rem;
+                    color: #323233 ;
+                }
+
+                .down_right_prise{
+                    flex: 1;
+                    line-height: 2.45rem;
+                    color: #666;
+
+                }
+
+                .down_right_minimumPrice{
+                    flex: 1;
+                    line-height: 2.45rem;
+                    display: flex;
+                    
+
+                    .minimumPrice_name{
+                        color: #666;
+                        font-size: 0.8rem;
+
+                    }
+
+                    .minimumPrice_scopeBar{
+                        display: flex;
+                        width:17.1rem;
+                        margin-left: 0.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        .minimumPrice_scopeBar_left{
+                            position: absolute;
+                            left: 0;
+                            width: 5.19rem;
+                            height: 0.31rem;
+                            background-color: #1AC4DD;
+                            border-radius: 0.1rem;
+
+                        }
+                        .minimumPrice_scopeBar_circle{
+                            width: 1.375rem;
+                            height: 1.375rem;
+                            position: absolute;
+                            left: 4.375rem;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 0.7rem;
+                            border: 0.03rem solid #1AC4DD;
+                            box-shadow: 0 0 0.07rem 0.07rem #C0C0C0 ;
+                            z-index: 1;
+
+                        }
+
+                        .minimumPrice_scopeBar_right{
+                            position: absolute;
+                            right: 0;
+                            width: 11.4rem;
+                            height: 0.31rem;
+                            background-color: #EBEDF0;
+                            border-radius: 0.1rem;
+
+
+                        }
+                    }
+
+                }
+
+                .down_right_highestPrice{
+                    flex: 1;
+                    line-height: 2.45rem;
+                    display: flex;
+
+                    .highestPrice_name{
+                        color: #666;
+                        font-size: 0.8rem;
+
+                    }
+
+                    .highestPrice_scopeBar{
+                        display: flex;
+                        width: 17.1rem;
+                        margin-left: 0.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+
+                        .highestPrice_scopeBar_left{
+                            width: 5.19rem;
+                            height: 0.31rem;
+                            background-color: #1AC4DD;
+                            border-radius: 0.1rem;
+                            position: absolute;
+                            left: 0;
+
+                        }
+                        .highestPrice_scopeBar_circle{
+                            position: absolute;
+                            left: 70px;
+                            background-color: rgb(255, 255, 255);
+                            width: 1.375rem;
+                            height: 1.375rem;
+                            border-radius: 0.7rem;
+                            border: 0.03rem solid #1AC4DD;
+                            box-shadow: 0 0 0.07rem 0.07rem #C0C0C0 ;
+                            z-index: 1;
+                        }
+
+                        .highestPrice_scopeBar_right{
+                            width: 11.4rem;
+                            height: 0.31rem;
+                            background-color: #EBEDF0;
+                            border-radius: 0.1rem;
+                            position: absolute;
+                            right: 0;
+
+
+                        }
+                    }
+
+                }
+
+                .down_right_btn{
+                    flex: 2;
+                    margin: 0 auto;
+
+                    color: #fff;
+                    
+                    span{
+                        display:flex;
+                        width: 5.6rem;
+                        height: 2.125rem;
+                        background-color: #1AC4DD;
+                        border-radius: 0.15rem;
+                        margin: 1.7rem auto;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            
+        }
+
+    }
+
+
+
+}
+
+.active{
+    span{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #323233;
+        line-height: 2.75rem;
+        border-bottom: 0.19rem solid #1AC4DD;
+    }
+
+}
+
+
+.product_List{
+    margin-top: 6rem;
+    .product_List_left{
+        display: block;
+    }
+    .product_List_right{
+        display: none;
+    }
+    .product_List_item{
+        display: flex;
+        margin: 1.36rem;
+
+        .product_List_item_img{
+            flex: 1;
+            img{
+                width: 5.625rem;
+            }
+        }
+
+        .product_List_item_details{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+
+            .item_details_name{
+                flex: 1;
+                font-size: 1rem;
+                font-weight: 800;
+                color: #333;
+            }
+
+            .item_details_unitPrice{
+                flex: 1;
+                font-size: 0.875rem;
+                color: #666;
+
+            }
+
+            .item_details_discount{
+                flex: 1;
+                color: #AE6C1D ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8%;
+                background-color: #FFAE6C1D;
+
+
+
+            }
+
+            .item_details_price{
+                flex: 2;
+
+                align-items: flex-end;
+                display: flex;
+
+                .item_details_price_left{
+                    flex: 1;
+                    font-size: 0.75rem;
+                    color: #1AC4DD;
+
+                }
+
+                .item_details_price_middle{
+                    flex: 2;
+                    font-size: 0.75rem;
+                    color: #666;
+                }
+
+                .item_details_price_right{
+                    flex: 2;
+                    display: flex;
+                    justify-content: flex-end;
+                    color: #FE8B00 ;
+                    font-size: 0.75rem;
+                    align-items: flex-end;
+
+                    span{
+                        font-size: 1.25rem;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+.meng{
+    width: 100%;
+    height: 50rem;
+    background-color: rgba(51, 51, 51, 0.5);
+
+}
